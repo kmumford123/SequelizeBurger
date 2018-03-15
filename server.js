@@ -24,8 +24,8 @@ app.use("/", routes);
 app.use("/update", routes);
 app.use("/create", routes);
 
-// listen on port 3306
-var PORT = process.env.PORT || 3306;
+// listen on port 5959
+var PORT = process.env.PORT || 5959;
 db.sequelize.sync().then(function() {
         app.listen(PORT, function() {
             console.log("App listening on PORT " + PORT);
